@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HISBmodels </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is the simulation of the rumor propagation with the HISBmodel" />
+  <meta name="author" content=" Adil Imad Eddine Hosni" />
+
+  <script type="text/javascript" src="model/script.js"></script>
+	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="model/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="model/jquery.flot.min.js"></script>
+	<script type="text/javascript" src="model/d3.min.js"></script>
+	<script type="text/javascript" src="model/d3.geom.min.js"></script>
+	<script type="text/javascript" src="model/d3.layout.min.js"></script>
+	<script type="text/javascript" src="model/data.json"></script>
+	<script type="text/javascript" src= "model/d3.js"></script>
+
+
+
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/camera.css" rel="stylesheet" />
+  <link href="css/jquery.bxslider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="model/sirtoy.css" />
+
+  <!-- Theme skin -->
+  <link href="color/default.css" rel="stylesheet" />
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="ico/favicon.png" />
+
+  <!-- =======================================================
+    Theme Name: Eterna
+    Theme URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- start header -->
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+             
+            </div>
+            <div class="span6">
+
+              <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-white"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-white"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-white"></i></a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+
+        <div class="row nomargin">
+          <div class="span4">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li class="dropdown active">
+                      <a href="index.html"><i class="icon-home"></i> Home page <i class="icon-angle-down"></i></a>
+                    </li>               
+                    <li class="dropdown active">
+                      <a >Models Simulation <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="typography.html">HISBmodel</a></li>
+                          <li><a href="#">HISBMmodel</a></li>
+                          <li><a href="#">HISBmodel in multiplex</a></li>
+                       </ul
+                    </li>
+                    <li class="dropdown">
+                      <a>Models Description <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="HISBmodel.html">HISBmodel</a></li>
+                        <li><a href="#">HISBMmodel</a></li>
+                        <li><a href="#">HISBmode in multiplex OSNs</a></li>
+                      </ul>  
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Portfolio <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Portfolio 2 columns</a></li>
+                        <li><a href="#">Portfolio 3 columns</a></li>
+                        <li><a href="#">Portfolio 4 columns</a></li>
+                        <li><a href="#">Portfolio detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Blog <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Blog left sidebar</a></li>
+                        <li><a href="#">Blog right sidebar</a></li>
+                        <li><a href="#">Blog fullwidth</a></li>
+                        <li><a href="#">Post left sidebar</a></li>
+                        <li><a href="#">Post right sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Contact </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- end navigation -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- section featured -->
+    <section id="featured">
+
+      <!-- slideshow start here -->
+
+      <div class="camera_wrap" id="camera-slide">
+
+        <!-- slide 1 here -->
+        <div data-src="img/slides/camera/slide1/img1.jpg">
+          <div class="camera_caption fadeFromLeft">
+            <div class="container">
+              <div class="row">
+                <div class="span6">
+                  <h2 class="animated fadeInDown"><strong>The HISBmodel <span class="colored">rumor diffusion model</span></strong></h2>
+                  <p class="animated fadeInUp"> A rumor propagation model based on human individual and social behaviors in online social networks.</p>
+                  <a href="typography.html" class="btn btn-success btn-large animated fadeInUp">
+											<i class="icon-link" ></i> Read more
+										</a>
+                  <a href="typography.html" class="btn btn-theme btn-large animated fadeInUp">
+											<i class="icon-download" href="typography.html"></i> Simulation
+										</a>
+                </div>
+                <div class="span6">
+                  <img src="img/slides/camera/slide1/screen.png" alt="" class="animated bounceInDown delay1" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide 2 here -->
+        <div data-src="img/slides/camera/slide1/img1.jpg">
+          <div class="camera_caption fadeFromLeft">
+            <div class="container">
+              <div class="row">
+                <div class="span6">
+                  <h2 class="animated fadeInDown"><strong>The HISBmodel <span class="colored"> in multiplex OSNs</span></strong></h2>
+                  <p class="animated fadeInUp"> A rumor propagation model based on human individual and social behaviors.</p>
+                  <a href="#" class="btn btn-success btn-large animated fadeInUp">
+											<i class="icon-link"></i> Read more
+										</a>
+                  <a href="#" class="btn btn-theme btn-large animated fadeInUp">
+											<i class="icon-download"></i> Simulation
+										</a>
+                </div>
+                <div class="span6">
+                  <img src="img/slides/camera/slide1/screen.png" alt="" class="animated bounceInDown delay1" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide 3 here -->
+        <div data-src="img/slides/camera/slide1/img1.jpg">
+          <div class="camera_caption fadeFromLeft">
+            <div class="container">
+              <div class="row">
+                <div class="span6">
+                  <h2 class="animated fadeInDown"><strong>The HISBMmodel <span class="colored"> Multi-rumor diffusion model</span></strong></h2>
+                  <p class="animated fadeInUp"> (Coming soon)</p>
+                  <a href="#" class="btn btn-success btn-large animated fadeInUp">
+											<i class="icon-link"></i> Read more
+										</a>
+                  <a href="#" class="btn btn-theme btn-large animated fadeInUp">
+											<i class="icon-download"></i> Simulation
+										</a>
+                </div>
+                <div class="span6">
+                  <img src="img/slides/camera/slide1/screen.png" alt="" class="animated bounceInDown delay1" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- slideshow end here -->
+
+    </section>
+    <!-- /section featured -->
+
+    <section id="content">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="span12">
+            <div class="row">
+              <div class="span4">
+                <div class="box flyLeft">
+                  <div class="icon">
+                    <i href="typography.html" class="ico icon-circled icon-bgdark icon-laptop active icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4><strong>HISBmodel</strong> single rumor propagation </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                    </p>
+                    <a href="typography.html">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="box flyIn">
+                  <div class="icon">
+                    <i class="ico icon-circled icon-bgdark icon-laptop active icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4><strong>HISBMmodel</strong> Multi-rumor propagation</h4>
+                    <p>
+                      (comming soon).
+                    </p>
+                      </div>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="box flyRight">
+                  <div class="icon">
+                    <i class="ico icon-circled icon-bgdark icon-laptop active icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4> <strong>HISBmodel</strong> for multiplex OSNs propagation</h4>
+                    <p>
+                      (comming soon).
+                    </p>
+                     </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="solidline"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="row">
+              <div class="span12">
+                <div class="aligncenter">
+                  <h3> <strong>HISbBmodel</strong> presention</h3>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="span12">
+                <div class="solidline"></div>
+              </div>
+            </div> 
+
+        
+
+      </div>
+    </section>
+
+
+    <section id="works">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <h4 class="title">Recent <strong>Works</strong></h4>
+            <div class="row">
+
+              <div class="grid cs-style-4">
+                <div class="span3">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/1.jpg" alt="" /></div>
+                      <figcaption>
+                        <div>
+                          <span>
+								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+								</span>
+                          <span>
+								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
+								</span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span3">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/2.jpg" alt="" /></div>
+                      <figcaption>
+                        <div>
+                          <span>
+								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+								</span>
+                          <span>
+								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
+								</span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span3">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/3.jpg" alt="" /></div>
+                      <figcaption>
+                        <div>
+                          <span>
+								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+								</span>
+                          <span>
+								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
+								</span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="span3">
+                  <div class="item">
+                    <figure>
+                      <div><img src="img/dummies/works/4.jpg" alt="" /></div>
+                      <figcaption>
+                        <div>
+                          <span>
+								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+								</span>
+                          <span>
+								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
+								</span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="span4">
+              <div class="widget">
+                <h5 class="widgetheading">Browse pages</h5>
+                <ul class="link-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a >Models</a>
+                  <ul>
+                    <li><a href="typography.html">HISBmodel</a></li>
+                    <li><a >HISBMmodel</a></li>
+                    <li><a >HISBmodel in multiplex</a></li>
+                  </ul></li>
+                </ul>
+  
+              </div>
+            </div>
+            <div class="span4">
+              <div class="widget">
+                <h5 class="widgetheading">Get in touch</h5>
+                <p>
+                  <i class="icon-envelope-alt"></i> <ul>
+                      <li>hosni.adil.emp@bit.edu.cn</li>
+                      <li>hosni.adil.emp@gmail.com</li>
+                      <li>adilo231@hotmail.fr</li>
+                </p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div id="sub-footer">
+          <div class="container">
+            <div class="row">
+              <div class="span6">
+                <div class="copyright">
+                  <p><span>&copy; Eterna company. All right reserved</span></p>
+                </div>
+  
+              </div>
+  
+              <div class="span6">
+                <div class="credits">
+                  <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Eterna
+                  -->
+                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
+
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/toucheffects.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/camera/camera.js"></script>
+  <script src="js/camera/setting.js"></script>
+
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/portfolio/jquery.quicksand.js"></script>
+  <script src="js/portfolio/setting.js"></script>
+
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/inview.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="js/custom.js"></script>
+
+</body>
+</html>

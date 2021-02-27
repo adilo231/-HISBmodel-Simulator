@@ -1,0 +1,219 @@
+body {
+   margin: 0,20%,0,20%;
+}
+
+rect {
+   fill: none;
+   pointer-events: all;
+ }
+ 
+ .slider {
+   -webkit-appearance: none;
+   width: 100%;
+   height: 15px;
+   border-radius: 5px;  
+   background: #d3d3d3;
+   outline: none;
+   opacity: 0.7;
+   margin: 100,200,20,20;
+   -webkit-transition: .2s;
+   transition: opacity .2s;
+ }
+ 
+ .slider::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%; 
+   background: #4CAF50;
+   cursor: pointer;
+ }
+ 
+ .slider::-moz-range-thumb {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background: #4CAF50;
+   cursor: pointer;
+ }
+div#container {
+   border-style: solid;
+   margin: 10px;
+}
+
+section#counters {
+   font-size: 20px;
+   float: left;
+    margin: 10px;
+}
+
+section#counters_IP {
+   font-size: 20px;
+   float: left;
+    margin: 10px;
+   
+}
+section#results{
+   font-size: 15px;
+   float: left;
+   margin: 10px;
+}
+
+section#controls {
+   font-size: 30px;
+   float: left;
+   margin: 20px,20px,20px,20px;
+   text-align: left;
+}
+
+section#controls_button{
+   font-size: 30px;
+   float: left;
+   width: 100%;
+   text-align: right;
+}
+
+#p_SI, #p_IR,#Time_sime {
+ padding: 3px;
+ margin-top: 10px;
+}
+
+span#susceptible {
+   color: #00f;
+    font-size: 14px;
+}
+
+span#infectious {
+	color: #f00;
+    font-size: 14px;
+}
+
+span#recovered {
+	color: #08b808;
+    font-size: 14px;
+}
+span#SO {
+	color: #038b8b;
+    font-size: 14px;
+}
+span#DO {
+	color: #bbb01b;
+    font-size: 14px;
+}
+div.tooltip {	
+   position: absolute;			
+   text-align: center;			
+   width: 150px;					
+   height: 30;					
+   padding: 2px;				
+   font: 15px sans-serif;		
+   background: lightsteelblue;	
+   border: 0px;		
+   border-radius: 8px;			
+   pointer-events: none;			
+}
+span#count_S, span#count_I, span#count_R ,span#count_SO,span#count_DO{
+   font-size: 48px;
+   font-weight: bold;
+   margin: 30px;
+}
+section#graphs {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   float: left;
+   width: 100%;
+   position: relative;
+}
+div#graph-layout {
+   margin: 5px;
+   float: left;
+   height: 650px;
+   width: 48%;
+   background: #fafafa;
+   border-style: solid;
+   border-width: 2px;
+   border-color: #3498db;
+   position: relative;
+}
+div#graph-layout_opinion{
+   margin: 5px;
+   float: left;
+   height: 650px;
+   width: 48%;
+   background: #fafafa;
+   border-style: solid;
+   border-width: 2px;
+   border-color: #3498db;
+   position: relative;
+   
+   
+}
+div#Nodes_degree_distribution,div#Acc_RumorDD,div#Sent_RumorDD{
+   width: 450px;
+   height: 250px;
+   background: #fff;
+   margin: 20px;
+   float: left;
+}
+div#Infcurves2, div#RumorPopuCurves,div#OpinionCurves{
+   width: 320px;
+   height: 180px;
+   background: #fff;
+   margin: 20px;
+   float: left;
+}
+div#epicurves {
+   width: 320px;
+   height: 180px;
+   background: #fff;
+   margin: 20px;
+   float: left;
+}
+
+
+
+circle.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+  border-width: 2px;
+  fill: #ff0;
+}
+
+line.link {
+  stroke: #333;
+  stroke-opacity: 0.5;
+  stroke-width: 2px;
+}
+
+div#graph-control {
+   position: absolute;
+   top: 0px;
+   width: 100%;
+   pointer-events: none;
+}
+
+span#start-text,span#start-text2  {
+  font-size: 28px;
+  text-align: left;
+  float: left;
+  stroke-opacity: 0.5;
+  color: #000;
+  padding: 10px;
+}
+
+button#reset-button , button#Pause-button,button#Start-button {
+  float: right;
+   pointer-events: all;
+}
+
+ button#Start-button, button#reset-button, button#Pause-button {
+    margin: 10px;
+    padding: 10px 20px;
+       
+ 
+ }
+
+
+
+
